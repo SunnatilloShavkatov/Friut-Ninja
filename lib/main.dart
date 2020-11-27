@@ -2,18 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:fruit_ninja/initial_page.dart';
 
 void main() {
-  runApp(InitialPage());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Fruit Ninja clone',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      debugShowCheckedModeBanner: false,
       home: InitialPage(),
     );
   }
